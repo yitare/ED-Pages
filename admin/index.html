@@ -10331,6 +10331,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@edt-pages.github.io:443?security=tl
         const UUID_EASTER_HINT_START = 5;
         const UUID_EASTER_MAX_INTERVAL = 1000;
         const UUID_EASTER_RESET_DELAY = 1400;
+        const UUID_EASTER_FX_VERTICAL_OFFSET = 12;
         const UUID_SNIPPETS_JS_URL = 'https://raw.githubusercontent.com/EDT-Pages/EDT.min.js/Snippets/EDT.min.js';
         const UUID_SNIPPETS_DICT_URL = 'https://raw.githubusercontent.com/EDT-Pages/EDT.min.js/Snippets/字典.json';
 
@@ -10372,7 +10373,7 @@ vless://7b102311-43fd-4e8f-977e-8090623c101d@edt-pages.github.io:443?security=tl
             const baseX = Number.isFinite(clientX) ? clientX : rect.left + rect.width / 2;
             const baseY = Number.isFinite(clientY) ? clientY : rect.top + rect.height / 2;
             const x = baseX + (Math.random() * 14 - 7);
-            const y = baseY + (Math.random() * 8 - 4);
+            const y = baseY - UUID_EASTER_FX_VERTICAL_OFFSET + (Math.random() * 8 - 4);
 
             const fx = document.createElement('div');
             fx.className = 'uuid-click-fx';
