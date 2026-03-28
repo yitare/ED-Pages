@@ -8,7 +8,7 @@
     "edt4.pages.dev",
     "edt5.pages.dev"
   ],
-  "UUID": "7b102311-43fd-4e8f-977e-8090623c101d",
+  "UUID": "97c91dff-839b-4171-b13d-436440b84e1d",
   "协议类型": "vless",
   "传输协议": "ws",
   "gRPC模式": "gun",
